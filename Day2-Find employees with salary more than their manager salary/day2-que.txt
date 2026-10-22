@@ -1,0 +1,22 @@
+-- Find employees with salary more than their manager salary
+
+input: 
+
+emp_id      emp_name   salary      manager_id 
+----------- ---------- ----------- -----------
+          1 Ankit            10000           4
+          2 Mohit            15000           5
+          3 Vikas            10000           4
+          4 Rohit             5000           2
+          5 Mudit            12000           6
+          6 Agam             12000           2
+          7 Sanjay            9000           2
+          8 Ashish            5000           2
+
+output :
+emp_id      emp_name   manager_name emp_salary  manager_salary
+----------- ---------- ------------ ----------- --------------
+          1 Ankit      Rohit              10000           5000
+          2 Mohit      Mudit              15000          12000
+          3 Vikas      Rohit              10000           5000
+

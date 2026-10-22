@@ -7,27 +7,23 @@ Matches played
 Wins
 Losses
 
-
-📂 Table Structure
-
-create table icc_world_cup
-(
-    team_1 varchar(20),
-    team_2 varchar(20),
-    winner varchar(20)
-);
-
-INSERT INTO icc_world_cup values('India','SL','India');
-INSERT INTO icc_world_cup values('SL','Aus','Aus');
-INSERT INTO icc_world_cup values('SA','Eng','Eng');
-INSERT INTO icc_world_cup values('Eng','NZ','NZ');
-INSERT INTO icc_world_cup values('Aus','India','India');
-
-select * from icc_world_cup;
-
+input:
+Team A                TeamB                Winner
 -------------------- -------------------- --------------------
 India                SL                   India               
 SL                   Aus                  Aus                 
 SA                   Eng                  Eng                 
 Eng                  NZ                   NZ                  
 Aus                  India                India               
+
+
+output:
+team_name            matches_played no_of_wins  no_of_losses
+-------------------- -------------- ----------- ------------
+Aus                               2           1            1
+Eng                               2           1            1
+India                             2           2            0
+NZ                                1           1            0
+SA                                1           0            1
+SL                                2           0            2
+
